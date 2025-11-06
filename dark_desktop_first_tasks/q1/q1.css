@@ -1,0 +1,12 @@
+/* q1.css - Pseudo-classes demonstration (desktop-first) */
+.row{display:flex;gap:24px;align-items:flex-start}
+.example{flex:1;min-width:220px}
+.link{color:var(--accent);text-decoration:none;padding:6px;border-radius:6px;display:inline-block}
+.link:hover{background:rgba(255,204,0,0.08);color:#fff}
+.btn{background:var(--accent);border:none;color:#07101a;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn:focus{outline:3px solid rgba(255,204,0,0.18);outline-offset:4px}
+.demo-list{list-style:decimal;padding-left:20px}
+.demo-list li:nth-child(odd){background:rgba(255,255,255,0.02);padding:6px;border-radius:6px}
+.note{color:var(--muted);margin-top:8px;font-size:14px}
+@media (max-width:900px){.row{flex-direction:column}}

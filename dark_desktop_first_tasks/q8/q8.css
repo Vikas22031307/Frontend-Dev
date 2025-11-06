@@ -1,0 +1,7 @@
+/* q8.css - Box-sizing comparison */
+.compare{display:flex;gap:24px;align-items:flex-start}
+.box{flex:1;min-width:300px}
+.box .inner{width:300px;padding:40px;border:10px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);border-radius:8px}
+.right .inner{box-sizing:border-box}
+.note{color:var(--muted);margin-top:12px}
+@media (max-width:900px){.compare{flex-direction:column}}

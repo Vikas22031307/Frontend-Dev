@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 8 - Box Sizing Comparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Task 8 — Box-Sizing Comparison</h1><small>content-box vs border-box</small></header>
+    <main style="margin-top:14px" class="card">
+      <section class="compare">
+        <div class="box left">
+          <h3>Default (content-box)</h3>
+          <div class="inner">width:300px; padding:40px; border:10px solid</div>
+        </div>
+        <div class="box right">
+          <h3>border-box</h3>
+          <div class="inner">box-sizing: border-box; same width applied</div>
+        </div>
+      </section>
+      <p class="note">Observe how padding and border contribute to total size in content-box.</p>
+    </main>
+    <p style="margin-top:12px"><a href="../index.html" style="color:var(--accent)">← Back</a></p>
+  </div>
+</body>
+</html>

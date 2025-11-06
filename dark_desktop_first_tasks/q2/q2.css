@@ -1,0 +1,8 @@
+/* q2.css - Tooltip demo (CSS only) */
+.tip-row{display:flex;gap:28px;align-items:center;justify-content:center;padding:20px}
+.tip{position:relative;display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:12px;background:var(--glass);cursor:default}
+.icon{font-size:22px}
+.tooltip{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(6px);background:#07101a;color:var(--text);padding:8px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s ease, transform .3s ease;font-size:13px;border:1px solid rgba(255,255,255,0.04)}
+.tip:hover .tooltip{opacity:1;transform:translateX(-50%) translateY(0)}
+.tooltip{z-index:10}
+@media (max-width:900px){.tip-row{flex-direction:row;gap:18px}}

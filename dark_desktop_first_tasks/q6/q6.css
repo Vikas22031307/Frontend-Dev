@@ -1,0 +1,9 @@
+/* q6.css - Animations using @keyframes */
+.anim-grid{display:flex;gap:24px;align-items:center;justify-content:center;min-height:200px}
+.item1{width:120px;height:60px;background:linear-gradient(90deg,#1b2a44,#22324a);border-radius:8px;display:flex;align-items:center;justify-content:center;animation:slide 3s ease-in-out infinite alternate}
+.ball{width:60px;height:60px;background:linear-gradient(180deg,#ffcc00,#ffb400);border-radius:50%;animation:bounce 1s cubic-bezier(.28,.84,.42,1) infinite}
+.text{padding:12px 18px;border-radius:8px;background:rgba(255,255,255,0.02);animation:pulse 2.6s ease-in-out infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(80px)}}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-60px)}100%{transform:translateY(0)}}
+@keyframes pulse{0%{color:var(--text)}50%{color:var(--accent)}100%{color:var(--text)}}
+/* animation-delay, iteration-count, direction can be adjusted as needed */

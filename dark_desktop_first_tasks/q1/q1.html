@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 1 - Pseudo-Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="q1.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Task 1 — Pseudo-Classes</h1><small>Examples of :hover, :focus, :active, :nth-child()</small></header>
+    <main style="margin-top:14px" class="card">
+      <section class="examples" aria-label="pseudo-class examples">
+        <div class="row">
+          <div class="example">
+            <h3>Link :hover</h3>
+            <p><a href="#" class="link">Hover over this link</a></p>
+            <p class="note">:hover — changes style when the mouse is over an element.</p>
+          </div>
+          <div class="example">
+            <h3>Button :active & :focus</h3>
+            <p><button class="btn">Press me</button></p>
+            <p class="note">:active — while clicking; :focus — when focused via keyboard/tab.</p>
+          </div>
+          <div class="example">
+            <h3>List :nth-child()</h3>
+            <ul class="demo-list">
+              <li>Item one</li>
+              <li>Item two</li>
+              <li>Item three</li>
+              <li>Item four</li>
+            </ul>
+            <p class="note">:nth-child(odd) highlights odd rows.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <p style="margin-top:12px"><a href="../index.html" style="color:var(--accent)">← Back</a></p>
+  </div>
+</body>
+</html>

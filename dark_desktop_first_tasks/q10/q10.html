@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 10 - Mini UI Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="q10.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header card" style="display:flex;align-items:center;justify-content:space-between">
+      <h2>MiniApp</h2>
+      <nav><a href="../index.html" style="color:var(--accent)">Home</a></nav>
+    </header>
+    <main style="margin-top:14px;display:flex;gap:18px">
+      <aside class="sidebar card" style="width:280px">
+        <h3>Profile</h3>
+        <img src="https://picsum.photos/seed/profile/200/200" alt="profile" style="width:100%;border-radius:8px;margin-top:12px">
+      </aside>
+      <section class="main-card card" style="flex:1">
+        <form>
+          <label>Search
+            <input type="search" placeholder="Search..." required style="width:100%;padding:10px;margin-top:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)">
+          </label>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <button class="btn primary" type="submit">Go</button>
+            <button class="btn secondary" type="reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="card" style="margin-top:16px;text-align:center"><small>Mini UI — desktop-first responsive</small></footer>
+  </div>
+</body>
+</html>

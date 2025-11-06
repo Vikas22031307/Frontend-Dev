@@ -1,0 +1,8 @@
+/* q4.css - Demonstrate selector types (comments explain each rule) */
+p{color:var(--muted)} /* element selector */
+.highlight{background:rgba(255,255,255,0.02);padding:8px;border-radius:6px} /* class selector */
+#unique{border-left:4px solid var(--accent);padding-left:8px} /* ID selector */
+a[data-type="external"]{color:var(--accent);text-decoration:none} /* attribute selector */
+.parent > p{font-weight:700} /* direct child > */
+.parent p + span{display:inline-block;margin-top:8px;color:var(--muted)} /* adjacent sibling + */
+section em{color:#ffdda1} /* descendant selector */
