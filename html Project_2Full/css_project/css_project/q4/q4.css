@@ -1,0 +1,14 @@
+/* q4 - Shadows & Depth */
+body{font-family:Arial,Helvetica,sans-serif;margin:24px;background:#f8fafc;color:#111}
+h1{margin-bottom:18px}
+.cards{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap}
+
+/* Different shadow styles */
+.card{width:220px;height:140px;border-radius:12px;padding:16px;background:#fff;transition:box-shadow .25s ease, transform .25s ease;text-align:center}
+.card h2{text-shadow:1px 1px 0 rgba(0,0,0,0.08)}
+.c1{box-shadow:0 2px 8px rgba(15,23,42,0.06)}
+.c2{box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+.c3{box-shadow:0 12px 28px rgba(15,23,42,0.10)}
+
+/* Hover: lift up with larger shadow */
+.card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(2,6,23,0.18)}

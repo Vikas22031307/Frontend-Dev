@@ -1,0 +1,17 @@
+/* q3 - Gradient Backgrounds */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:#fff;color:#111}
+.site-header,.site-footer{position:fixed;left:0;right:0;height:56px;background:#111;color:#fff;display:flex;align-items:center;padding:0 20px;z-index:10}
+.site-header{top:0}
+.site-footer{bottom:0}
+main{padding:80px 20px 80px}
+
+/* Linear gradient section */
+.linear{height:50vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background: linear-gradient(135deg,#a78bfa,#60a5fa 60%);
+  color:#fff;border-radius:12px;margin-bottom:22px}
+
+/* Radial gradient with fixed attachment (parallax-like) */
+.radial{height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background: radial-gradient(circle at 20% 20%, #fde68a, #fb7185 50%, #f97316 100%);
+  background-attachment: fixed;color:#111;border-radius:12px}

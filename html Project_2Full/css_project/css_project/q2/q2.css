@@ -1,0 +1,20 @@
+/* q2 - Height and Width Practice */
+/* Center all boxes vertically and horizontally with Flexbox */
+body,html{height:100%;margin:0;font-family:system-ui,Arial;background:#f3f4f6}
+.wrap{height:100vh;display:flex;align-items:center;justify-content:center}
+.container{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap}
+
+/* Boxes with varying units */
+.box{background:#fff;padding:12px;border-radius:8px;border:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(16,24,40,0.04)}
+.box-a{width:150px;height:150px;background:#fee2e2}
+.box-b{width:50%;height:20vh;background:#e0f2fe;min-width:160px;text-align:center}
+.box-c{min-height:8em;max-width:220px;background:#ecfccb;padding:18px;overflow:auto}
+
+/* Demonstrate overflow */
+.box-c p{margin:0}
+
+/* Responsive: ensure container does not overflow small screens */
+@media (max-width:700px){
+  .container{flex-direction:column}
+  .box-b{width:80%}
+}

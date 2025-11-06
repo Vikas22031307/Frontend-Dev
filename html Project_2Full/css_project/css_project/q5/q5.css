@@ -1,0 +1,29 @@
+/* q5 - Advanced Selectors */
+/* Attribute selectors */
+input[type="text"]{border:2px solid #c7d2fe;padding:8px;border-radius:6px}
+input[type="url"]{border:2px dashed #fde68a;padding:8px;border-radius:6px}
+
+/* Attribute selector example for links starting with https */
+a[href^="https"]{font-weight:600;border-bottom:2px solid #60a5fa;padding-bottom:2px}
+
+/* Pseudo-classes and pseudo-elements */
+a:hover{opacity:.85}
+input:focus{outline:3px solid rgba(99,102,241,0.25);outline-offset:4px}
+/* nth-child to color alternating items */
+.items li:nth-child(odd){background:#f1f5f9;padding:6px}
+.items li:nth-child(even){background:#fff;padding:6px}
+
+/* ::before and ::after for decorative content */
+.links li::before{content:"🔗 ";}
+.items li::after{content:" ·";}
+
+/* Combinators */
+/* direct child selector: style only direct li children of .links */
+.links > li{margin:6px 0}
+/* adjacent sibling: style an li that directly follows another */
+.items li + li{border-top:1px dashed #eef2ff;padding-top:8px}
+/* general sibling: style links after the list (demonstration - none here) */
+/* descendant selector: style any anchor inside .links */
+.links a{color:#0f172a;text-decoration:none}
+
+/* Comments explain each selector above */

@@ -1,0 +1,14 @@
+/* q9 - Outline & Focus */
+body{font-family:Arial;margin:28px;background:#fff;color:#111}
+.contact{max-width:480px;display:flex;flex-direction:column;gap:12px}
+label{display:flex;flex-direction:column;font-size:14px;gap:6px}
+input,textarea{padding:10px;border-radius:8px;border:1px solid #e6e6e6;box-shadow:0 1px 4px rgba(2,6,23,0.04)}
+/* Outline styles and offset */
+input:focus,textarea:focus{
+  outline:3px solid rgba(99,102,241,0.25);
+  outline-offset:6px;
+  box-shadow:0 6px 18px rgba(99,102,241,0.06);
+  border-color:#7c3aed;
+}
+/* Different outline styles example using :focus-visible could be added */
+button{padding:10px 14px;border-radius:8px;border:none;background:#0ea5a4;color:#fff;font-weight:600}

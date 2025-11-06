@@ -1,0 +1,12 @@
+/* q7 - Typography */
+body{font-family:Georgia, 'Times New Roman', serif;background:#fff;color:#0f172a;margin:36px}
+.article{max-width:720px;margin:0 auto}
+h1{font-family: 'Helvetica Neue', Arial, sans-serif;font-size:32px;margin-bottom:8px;text-align:left}
+p{font-size:16px;line-height:1.8;letter-spacing:0.2px;color:#111}
+/* Styling inline elements */
+mark{background:#fffbcc;padding:0 4px}
+strong{color:#0b6a47}
+em{color:#6b7280;font-style:normal}
+/* ::first-letter and ::first-line */
+.article p::first-line{font-weight:600;letter-spacing:0.6px}
+.article p::first-letter{font-size:1.6em;margin-right:6px;float:left}

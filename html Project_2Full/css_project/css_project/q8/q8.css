@@ -1,0 +1,11 @@
+/* q8 - Box Model */
+body{font-family:Arial;margin:24px;background:#f7fafc}
+.center{display:flex;flex-direction:column;gap:18px;align-items:center}
+.box-model{width:320px;padding:20px;border:6px solid rgba(99,102,241,0.08);background:#fff;border-radius:10px;position:relative;box-shadow:0 6px 12px rgba(10,10,20,0.03)}
+.content{background:#fef3c7;padding:18px;border:4px dashed #f59e0b}
+.info{font-size:13px;color:#374151;margin-top:8px}
+/* Comparison of box-sizing */
+.comparison{display:flex;gap:12px}
+.box{width:220px;padding:16px;border:3px solid #e6e9ef}
+.default{box-sizing:content-box}
+.borderbox{box-sizing:border-box}
