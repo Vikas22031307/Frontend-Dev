@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rahul Sharma",
+      "section": "A",
+      "marks": 88,
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Priya Verma",
+      "section": "B",
+      "marks": 76,
+      "grade": "B"
+    },
+    {
+      "id": "3879",
+      "name": "Vikas Tomar",
+      "section": "CB",
+      "marks": 90,
+      "grade": "A"
+    }
+  ]
+}
